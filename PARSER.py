@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 url = 'https://dedmorozural.ru/'
 responce = requests.get(url)
 print(responce.status_code)
-#print(responce.text)
+print(responce.text)
 
 soup = BeautifulSoup(responce.text, 'html.parser')
 print(soup.title)
